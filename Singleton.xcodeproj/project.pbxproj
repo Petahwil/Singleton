@@ -22,6 +22,8 @@
 		C5A38311181712750094042A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A382F0181712750094042A /* UIKit.framework */; };
 		C5A38319181712750094042A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5A38317181712750094042A /* InfoPlist.strings */; };
 		C5A3831B181712750094042A /* SingletonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A3831A181712750094042A /* SingletonTests.m */; };
+		C5A3832A18171EBC0094042A /* teacherList.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A3832918171EBC0094042A /* teacherList.m */; };
+		C5F2205F1818C70200B9D3FE /* globalVar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F2205E1818C70200B9D3FE /* globalVar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		C5A38316181712750094042A /* SingletonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SingletonTests-Info.plist"; sourceTree = "<group>"; };
 		C5A38318181712750094042A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C5A3831A181712750094042A /* SingletonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonTests.m; sourceTree = "<group>"; };
+		C5A3832818171EBC0094042A /* teacherList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = teacherList.h; sourceTree = "<group>"; };
+		C5A3832918171EBC0094042A /* teacherList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = teacherList.m; sourceTree = "<group>"; };
+		C5F2205D1818C70200B9D3FE /* globalVar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globalVar.h; sourceTree = "<group>"; };
+		C5F2205E1818C70200B9D3FE /* globalVar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = globalVar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,10 @@
 				C5A38301181712750094042A /* Main_iPad.storyboard */,
 				C5A38304181712750094042A /* ViewController.h */,
 				C5A38305181712750094042A /* ViewController.m */,
+				C5A3832818171EBC0094042A /* teacherList.h */,
+				C5A3832918171EBC0094042A /* teacherList.m */,
+				C5F2205D1818C70200B9D3FE /* globalVar.h */,
+				C5F2205E1818C70200B9D3FE /* globalVar.m */,
 				C5A38307181712750094042A /* Images.xcassets */,
 				C5A382F3181712750094042A /* Supporting Files */,
 			);
@@ -254,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5A38306181712750094042A /* ViewController.m in Sources */,
+				C5A3832A18171EBC0094042A /* teacherList.m in Sources */,
 				C5A382FD181712750094042A /* AppDelegate.m in Sources */,
+				C5F2205F1818C70200B9D3FE /* globalVar.m in Sources */,
 				C5A382F9181712750094042A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +486,7 @@
 				C5A38320181712750094042A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5A38321181712750094042A /* Build configuration list for PBXNativeTarget "SingletonTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +495,7 @@
 				C5A38323181712750094042A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
