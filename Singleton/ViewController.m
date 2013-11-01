@@ -21,23 +21,26 @@ NSMutableArray *theTeacherList2;
 - (void)viewDidLoad
 {
     DataClass *obj=[DataClass getInstance];
-    obj.URL= @"http://search.azlyrics.com/search.php?q=Hey+There+d&p=%1&w=songs";
+    obj.URL= @"http://search.azlyrics.com/search.php?q=Hey+There+D&p=1&w=songs";
     obj.printXML = @"";
-    obj.changeParam = @"";
-    obj.findParsString = @"<a href=\"";
-    obj.startPars = @"<a href=\"";
-    obj.endPars = @"\">";
+    obj.dimentionArraySize =[NSMutableArray arrayWithObjects:@"20",@"3",nil];
+    obj.changeParam = [NSMutableArray arrayWithObjects:@"",nil];
+    obj.findParsString =[NSMutableArray arrayWithObjects:@"<a href=\"http://www.azlyrics.com/lyrics/",nil];
+    obj.startPars = [NSMutableArray arrayWithObjects:@"<a href=",@">",@"<b>",@"Break",nil];
+    obj.endPars =[NSMutableArray arrayWithObjects:@">",@"</a>",@"</b>",nil];
+    
 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    theTeacherList = [[teacherList sharedTeacherList]teacherArray];
+    theTeacherList = [[teacherList sharedTeacherList]tree];
 
     int i;
-    
-    for (i = 0; i <[theTeacherList count]; i++) {
-    NSLog(@"%@",[theTeacherList objectAtIndex:i]);
-}
+    int p = 0;
+    for (i = 0; i <20; i++) {
+    NSLog(@" \n %i) %@ ,\n %@ ,\n %@",i +1,[[teacherList sharedTeacherList]tree][p][0], [[teacherList sharedTeacherList]tree][p][1], [[teacherList sharedTeacherList]tree][p][2]);
+         p++;
+    }
 }
 - (void)didReceiveMemoryWarning
 {

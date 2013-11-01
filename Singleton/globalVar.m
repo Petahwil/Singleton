@@ -15,6 +15,7 @@
 @synthesize changeParam;
 @synthesize startPars;
 @synthesize endPars;
+@synthesize dimentionArraySize;
 @synthesize findParsString;
 static DataClass *instance =nil;
 +(DataClass *)getInstance

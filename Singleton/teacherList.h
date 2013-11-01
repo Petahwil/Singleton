@@ -15,7 +15,7 @@
 }
 
 @property (nonatomic, retain) NSString *someProperty;
-@property (nonatomic, retain) NSMutableArray *teacherArray;
+@property (nonatomic, retain) NSMutableArray *tree;
 @property (nonatomic, retain) NSString *myString;
 
 + (teacherList *)sharedTeacherList;

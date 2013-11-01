@@ -12,18 +12,19 @@
     
     NSString *URL;
     NSString *printXML;
-    NSString *changeParam;
-    NSString *findParsString;
-    NSString *startPars;
-    int startLength;
-    NSString *endPars;
+    NSMutableArray *changeParam;
+    NSMutableArray *findParsString;
+    NSMutableArray *startPars;
+    NSMutableArray *dimentionArraySize;
+    NSMutableArray *endPars;
 }
 @property(nonatomic,retain)NSString *URL;
 @property(nonatomic,retain)NSString *printXML;
-@property(nonatomic,retain)NSString *changeParam;
-@property(nonatomic,retain)NSString *findParsString;
-@property(nonatomic,retain)NSString *startPars;
-@property(nonatomic,retain)NSString *endPars;
+@property(nonatomic,retain)NSMutableArray *changeParam;
+@property(nonatomic,retain)NSMutableArray *findParsString;
+@property(nonatomic,retain)NSMutableArray *startPars;
+@property(nonatomic,retain)NSMutableArray *endPars;
+@property(nonatomic,retain)NSMutableArray *dimentionArraySize;
 +(DataClass*)getInstance;
 @end
 
